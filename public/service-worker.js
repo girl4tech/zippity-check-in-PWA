@@ -22,6 +22,7 @@ var filesToCache = [
  "./images/icons/icon-192x192.png",
  "./images/icons/icon-256x256.png",
  "./index.html",
+ "./checkin.html",
  "./manifest.json",
  "./scripts",
  "./scripts/app.js",
