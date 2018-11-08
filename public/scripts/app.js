@@ -13,6 +13,13 @@ window.addEventListener('load', function() {
     e.preventDefault();
     webAuth.authorize();
     console.log('click')
+
+    if ("geolocation" in navigator) {
+      console.log("geolocation is available");
+    } else {
+      console.log("geolocation IS NOT available");
+    }
+
   });
 
   (function() {
