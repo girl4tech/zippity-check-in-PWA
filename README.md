@@ -1,6 +1,6 @@
 # Zippity Customer Check-in 
 
-A progressive web app that works online, offline, in a browser and as a mobile app. The app handles the check in process for Zippity customers in need of car care service.
+A progressive web app that works in a browser and as a mobile app. The app handles the check in process for Zippity customers in need of car care service.
 
 ## What's inside?
 
