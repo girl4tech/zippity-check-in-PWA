@@ -6,15 +6,17 @@ A progressive web app that works online, offline, in a browser and as a mobile a
 
 The main files in the app are:  
 
-- [public/index.html](public/index.html) The main page for the app
-- [public/style/style.css)](public/style/style.css) Styling
-- [public/scripts/app.js](public/scripts/app.js) This contains the javascript to handle the logic.
-- [public/service-worker.js](public/service-worker.js) This lists files to cache locally
+- [public/index.html](public/index.html) The main view / login page.
+- [public/index.html](public/checkin.html) The main page for the check-in process.
+- [public/style/style.css)](public/styles/materialize.css) Styling.
+- [public/scripts/app.js](public/scripts/app.js) Contains the javascript to handle logic and webAuth.
+- [public/service-worker.js](public/service-worker.js) This lists files to cache locally.
 
 <img src="images/ZippityTeam.png" width="400" border="3" style="border-radius: 10px;">
 
 ## Want to edit the app?
 
+- Clone or download this repo
 - Open `index.html` within the public folder
 - Install a service worker for your browser, if you haven't already (eg [Web Server for Chrome](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/#install_and_verify_web_server))
 - Browsers may also ask if you want to include the app on your homescreen
