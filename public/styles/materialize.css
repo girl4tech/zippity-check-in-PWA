@@ -4734,6 +4734,7 @@ small {
 .card .list-title {
   font-size: 18px;
   font-weight: 300;
+  padding-bottom:9px;
 }
 
 .card .card-title.activator {
