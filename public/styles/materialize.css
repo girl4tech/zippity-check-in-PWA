@@ -2880,6 +2880,12 @@ ul.staggered-list li {
   }
 }
 
+@media only screen and (max-width: 375px){
+  img {
+    width:100%;
+  }
+}
+
 .page-footer {
   padding-top: 20px;
   color: #fff;
