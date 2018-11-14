@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Template PWA</title>
+    <title>Zippity-Check-In</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="styles/materialize.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -41,35 +42,32 @@
     <main class="container">
       <div class="row">
         <div class="col s12">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Help us locate your car</span>
-              <button class="btn btn-primary btn-margin red">car locator</button>
+          <div id="main-car-container" class="card blue-grey darken-1">
+            <div id="map-container" class="toggle-content">
+              <div id="main-map"></div>
+            </div>
+            <div id="carLocation" class="card-content white-text toggle-content">
+              <span id="carLocate" class="card-title">Help us locate your car</span>
+              <button id="setLocation" class="btn btn-primary btn-margin red toggle">car locator</button>
+              <button id="resetLocation" class="btn btn-primary btn-margin red toggle">Reset Location</button>
             </div>
           </div>
           <div class="card blue-grey card-content white-text darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">Leave keys in lock box</span>
-                <button class="btn btn-primary btn-margin red">reveal box code</button>
+            <div id="keyosk-card" class="card-content white-text">
+                <span id="keyosk-span" class="card-title">Leave keys in lock box</span>
+                <button id="keyosk-btn" class="btn btn-primary btn-margin red">View Keyosk</button>
             </div>
             </div>
             <div class="card card-content darken-1">
-                <span class="completeCheckIn">All set? Let our technicians know you're ready</span>
-                <button class="btn">check-in complete</button>
+                <span class="completeCheckIn">All set? Notify our technicians</span>
+                <button id="ready" class="btn">Ready for Service</button>
             </div>
-
-          <!-- <input id="message" type="text" class="validate"> -->
-          <!-- <button class="waves-effect waves-light btn-large red" id="button" type="button" name="button">
-            Check-In
-          </button> -->
-          <!-- <button id="btn-login" class="btn btn-primary btn-margin"> -->
-            <!-- Log In -->
-        <!-- </button> -->
         </div>
       </div>
     </main>
     <script src="https://cdn.auth0.com/js/auth0/9.5.1/auth0.min.js"></script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Au61JvcHT9S0vibPZ_vSAYgM6MT_zYLQGwOlTc9ynM3wiWsaxbkxMEMnh-B_9gN_&callback=loadMapScenario' async defer></script>
     <!-- <script type="text/javascript" src="node_modules/auth0-js/build/auth0.js"></script> -->
-    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/checkin.js"></script>
   </body>
 </html>

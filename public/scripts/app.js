@@ -13,32 +13,11 @@ window.addEventListener('load', function() {
     e.preventDefault();
     webAuth.authorize();
     console.log('click')
-
-    if ("geolocation" in navigator) {
-      console.log("geolocation is available");
-    } else {
-      console.log("geolocation IS NOT available");
-    }
-
   });
 
   (function() {
     'use strict';
-  
-    // window.onload = function() {
-    //   let message = localStorage.getItem("message") || 'Your message will display here';
-    //   $('#message').html(message);
-    //   $('#display').html(message);
-    // }
-  
-    // $('#button').click(() => {
-    //   console.log('click')
-    //   let message = $('#message').val();
-    //   console.log(message);
-    //   // $('#display').html(message);
-    //   // localStorage.setItem("message", message);
-    // });
-  
+
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
                .register('./service-worker.js')
